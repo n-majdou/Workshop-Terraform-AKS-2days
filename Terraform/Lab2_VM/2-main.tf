@@ -41,7 +41,7 @@ resource "azurerm_linux_virtual_machine" "terra_vm" {
 
   admin_ssh_key {
     username   = var.vmUser
-    public_key = file("~/.ssh/id_rsa.pub")
+    public_key = file("~/rsa.pub")
   }
 
   os_disk {
